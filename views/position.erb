@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LACKP Kickball</title>
+    <link rel="stylesheet" href="home.css" />
+
+  </head>
+
+    <body>
+
+      <h1><%= @position_name %></h1>
+
+      <ul>
+        <% @position.each do |player| %>
+        <li><%=  player['first_name']  %> <%=  player['last_name']  %>, <%=  player['team']  %></li>
+        <% end %>
+      </ul>
+
+  </body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LACKP Kickball</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+  <h1>
+  <%= @kickball %>
+  </h1>
+
+  <h3>Teams</h3>
+  <ul>
+    <% @team_names.each do |name| %>
+    <li><a href="http://localhost:4567/<%= (name.downcase.gsub(' ','')) %>"><%= name %></a></li>
+    <% end %>
+  </ul>
+
+
+  </body>
+  </html>
