@@ -39,7 +39,7 @@ end
 
 
 get '/' do
-  @kickball = "LAKP"
+  @kickball = "LACKP"
   @team_names = ["Simpson Slammers", "Jetson Jets", "Flinestone Fire", "Griffin Goats"]
   @position_names = ["Catcher", "1st Base", "2nd Base", "3rd Base", "Shortstop", "Left Field", "Center Field", "Right Field", "Pitcher"]
   erb :index
