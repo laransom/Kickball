@@ -10,13 +10,18 @@
   <%= @kickball %>
   </h1>
 
-  <h3>Teams</h3>
+
   <ul>
     <% @team_names.each do |name| %>
     <li><a href="http://localhost:4567/<%= (name.downcase.gsub(' ','')) %>"><%= name %></a></li>
     <% end %>
   </ul>
 
+  <ul>
+    <% @position_names.each do |name| %>
+    <li><a href="http://localhost:4567/<%= (name.downcase.gsub(' ','')) %>"><%= name %></a></li>
+    <% end %>
+  </ul>
 
   </body>
   </html>
